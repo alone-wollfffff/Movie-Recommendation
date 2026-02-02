@@ -25,6 +25,11 @@ def recommend(movie_title):
 # 3. Streamlit UI
 st.title('Movie Recommendation System')
 
+st.set_page_config(
+    page_title="Movie Recommendation System",
+    page_icon="🎬",
+)
+
 selected_movie = st.selectbox(
     'Search or select a movie:',
     movies['title'].values
